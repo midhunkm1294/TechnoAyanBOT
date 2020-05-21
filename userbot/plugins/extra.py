@@ -14,12 +14,12 @@ from userbot.utils import admin_cmd
 @borg.on(admin_cmd("leave$"))
 async def leave(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("`I iz Leaving dis Kensur Group kek!`")
+        await e.edit("`I am Leaving this Fucking Group kick Kar!`")
         time.sleep(3)
         if '-' in str(e.chat_id):
             await bot(LeaveChannelRequest(e.chat_id))
         else:
-            await e.edit('`Sar This is Not A Chat`')
+            await e.edit('`Sab This is Not A Chat`')
 
 @borg.on(admin_cmd(";__;$"))
 #@register(outgoing=True, pattern="^;__;$")
